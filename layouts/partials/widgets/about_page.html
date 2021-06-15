@@ -1,0 +1,51 @@
+{{ $ := .root }}
+{{ $page := .page }}
+
+<!-- stylesheet from https://animate.style -->
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+</head>
+
+<style>
+  greet  {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+</style>
+
+<!-- About me widget -->
+<div class="about-page">
+  <div class="row">
+    <div class="col-12 col-lg-3">
+      <h1>about me</h1>
+    </div>
+    <div class="col-12 col-lg-9">
+        <div class="card-about">
+          <greet>Hi! You can call me Finn.</greet>
+          <br>
+          <br>
+          I'm an economist currently based in Brussels, interested in spatial components of economics & policy making, with a special emphasis on the environment.
+          Explaining the outcomes of economic models can often be difficult, but a well-designed visualisation can often provide some unique insights. On this
+          site, I aim to share my thoughts on topics I find interesting in the <a href="/blog">blog</a>.
+
+          <br>
+          <br>
+          Currently, I am working as an economic modeller at <a href="https://www.camecon.com/">Cambridge Econometrics</a> where I do scenario modelling
+          and maintain the E3ME global macroeconometric model. Previously worked as a research assistant at the <a href="https://www2.novasbe.unl.pt/en/">NOVA School for Business and Economics</a>
+          in Portugal, trying to better understand how proximity and structural characteristics of parking facilities affect competition.
+          <br>
+          <br>
+          <b>Feel free to drop me a line at <a href="mailto:finn_henrik@hotmail.com">finn_henrik@hotmail.com</a>,
+            check out my <a href="/files/cv.pdf">CV</a> or <a href="https://www.linkedin.com/in/finn-henrik-barton-53193214b/">LinkedIn</a>. You can also view my code on <a href="https://github.com/FinnHB">github</a> or find me on <a href="https://twitter.com/FhBarton">Twitter</a>.</b>
+        </div>
+    </div>
+    <div class="col-12">
+      <h3>my <a href="#experience">experience</a>, <a href="#education">education</a>, & <a href="#featured">featured publications</a><br><a href="#experience"><div class="arrow-bounce"><br><i class="fas fa-chevron-down"></i></div></a></h3>
+    </div>
+  </div>
+
+</div>

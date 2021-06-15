@@ -1,0 +1,40 @@
+---
+title: How I added CSS animations to my Hugo Academic site
+author: Isabella Benabaye
+date: '2020-08-23'
+slug: adding-css-animations
+categories: [hugo, hugo academic, css]
+tags: [hugo, hugo academic, css, creating this website]
+subtitle: ''
+summary: 'A lazy, shortcut approach; inspired by this wonderful [blog post](https://www.connorrothschild.com/post/animate-hugo-academic/) by [Connor Rothschild](https://www.connorrothschild.com).'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: yes
+projects: []
+type: today-i-learned
+output: hugodown::hugo_document
+---
+
+
+
+<p>The other day I finally got the chance to read <a href="https://www.connorrothschild.com">Connor Rothschild</a>’s blog post <a href="https://www.connorrothschild.com/post/animate-hugo-academic/"><strong>“Three Simple Steps to Bring Impressive Animations to your Hugo Academic Site Using Blogdown”</strong></a>, a great resource for Hugo Academic users. Even if you have no HTML/CSS knowledge or are just getting started and would like a site that’s already animated, his tutorial’s got you! He explains every step and shows how easy it is to implement. If you’re a Hugo Academic user, I highly recommend you check it out!</p>
+<p>Upon reading his post, I was excited to get started animating my home page. With zero knowledge in CSS animations, I checked out the resources he linked and proceeded to search for animation examples that I’d like to implement on my home page. I stumbled upon <a href="https://animate.style"><code>Animate.css</code></a>, a library of ready-to-use, cross-browser animations for use in your web projects.</p>
+<p><code>{{&lt; figure src="./animate css.gif" link="./animate css.gif" &gt;}}</code></p>
+<p>The library has many different animations that you can choose from and has comprehensive documentation on how to install and use the library. I tested it out and when it worked, I decided to use this approach instead of making <code>@keyframes</code> rules as suggested in Connor’s tutorial. It’s a lazy, shortcut approach, but it works for my needs right now <code>:sweat_smile:</code></p>
+<p>To use the library, I added it directly to my home page using a CDN by pasting the following code found in their installation guide in my about widget’s HTML before <code>&lt;!-- About widget --&gt;</code> <a href="https://github.com/isabellabenabaye/isabella-b.com/blob/master/layouts/partials/widgets/about_isabella_extended.html">(code here)</a>:</p>
+<pre><code>&lt;head&gt;
+  &lt;link
+    rel=&quot;stylesheet&quot;
+    href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css&quot;
+  /&gt;
+&lt;/head&gt;</code></pre>
+<p>Then, as in Connor’s tutorial, I added classes to the elements I wanted to animate. For example, I made my name displayed at the top of my home page of class <code>about-name</code>:</p>
+<pre><code>&lt;h1 class=&quot;about-name&quot;&gt;Isabella Benabaye&lt;/h1&gt; </code></pre>
+<p>I targeted that class in my <code>custom.scss</code> file to assign the animation I wanted for it. Since the animations are defined in the CDN, all I needed to define were the following animation properties <code>animation-name</code>, <code>animation-duration</code>, <code>animation-fill-mode</code>, and <code>animation-delay</code> in the following format: <code>animation: &lt;animation_name&gt; &lt;animation-duration&gt; &lt;animation-fill_mode&gt;</code> then <code>animation-delay</code> defined separately for clarity.</p>
+<pre><code>.about-name {
+  animation: flipInX 1s both;
+  animation-delay: 0.5s;
+}</code></pre>
+<p>I did that for each of the classes I wanted to animate, and that’s it! Since I already added the style sheet to the head of my <a href="https://github.com/isabellabenabaye/isabella-b.com/blob/master/layouts/partials/widgets/about_isabella_extended.html">HTML file</a> for my about widget on my <a href="/">home page</a>, I didn’t need to add it to the HTML of my projects widget. When adding animations to my <a href="/about/">about page</a>, I added the style sheet once again to my <a href="https://github.com/isabellabenabaye/isabella-b.com/blob/master/layouts/partials/widgets/about_page.html">first widget’s HTML</a> head to be able to use the animations on that webpage.</p>
