@@ -1,22 +1,10 @@
 <footer class="site-footer">
-  {{ if or (site.GetPage "terms.md") (site.GetPage "privacy.md") }}
   <p class="powered-by">
-    {{ with site.GetPage "privacy.md" }}
-      {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
-    {{ end }}
-    {{ with site.GetPage "terms.md" }}
-      {{ if site.GetPage "privacy.md" }} &middot; {{ end }}
-      {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
-    {{ end }}
-  </p>
-  {{ end }}
+    {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} &ndash; {{ end }}
 
-  <p class="powered-by">
-    {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} &middot; {{ end }}
-
-    </i>, &ensp;<a href="https://github.com/isabellabenabaye/isabella-b.com" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener"></a>, the&ensp;<a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the 
+    </i>&ensp;<a href="https://github.com/FinnHB/fhbarton_website" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener"></a>, the&ensp;<a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the 
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>. <br> Code-base from <a href="https://isabella-b.com/" target="_blank" rel="noopener">isabella-b.com</a>.
 
     {{ if not (in (slice "docs" "updates") .Type) }}
     <span class="float-right" aria-hidden="true">
@@ -29,3 +17,4 @@
     {{ end }}
   </p>
 </footer>
+
