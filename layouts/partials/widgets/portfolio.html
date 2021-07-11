@@ -3,7 +3,7 @@
 {{/* Initialise */}}
 {{ $ := .root }}
 {{ $st := .page }}
-{{ $items_type := $st.Params.content.page_type | default "project" }}
+{{ $items_type := $st.Params.content.page_type | default "blog" }}
 {{ $columns := $st.Params.design.columns | default "2" }}
 
 {{ if ne $columns "1" }}

@@ -13,10 +13,10 @@
   url = "blog"
   weight = 20
 
-#[[main]]
-#  name = "today i learned"
-#  url = "today-i-learned"
-#  weight = 25
+[[main]]
+  name = "Teaching"
+  url = "teaching"
+  weight = 25
 
 #Want to add a gallery
 

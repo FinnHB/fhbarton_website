@@ -2,7 +2,7 @@
 header:
   caption: ""
   image: ""
-title: blog
+title: Blog
 view: 2
-summary: "I blog about my mini-projects and the things I learn, mostly in R and python."
+summary: "Short blog posts on topics I find interesting"
 ---

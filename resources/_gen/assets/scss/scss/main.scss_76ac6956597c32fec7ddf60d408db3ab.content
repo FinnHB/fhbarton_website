@@ -9356,15 +9356,17 @@ div.mermaid {
 
 .card-about a {
   color: rgba(0, 0, 0, 0.8);
-  border-bottom: 1.5px #D90429 dotted;
+  border-bottom: 1.5px rgba(245, 122, 122, 0.3) solid;
   cursor: pointer; }
 
 .card-about a:hover {
-  border-bottom: #fff;
+  border-bottom: #F7F7F7;
   text-decoration: none !important;
   color: #F57A7A;
+  border-bottom: 1.5px #F7F7F7 solid;
   cursor: pointer;
-  transition: color 0.6s ease; }
+  transition: color 0.6s ease;
+  transition: border-bottom 0.3s ease; }
 
 .about-page .row {
   height: calc(100vh - 85px);
@@ -9711,15 +9713,16 @@ pre code {
  **************************************************/
 .article-style a {
   color: rgba(0, 0, 0, 0.8);
-  border-bottom: 1.5px #EF476F dotted;
+  border-bottom: 1.5px rgba(245, 122, 122, 0.3) solid;
   cursor: pointer; }
 
 .article-style a:hover {
-  border-bottom: 1.5px #F57A7A dotted;
+  border-bottom: rgba(247, 247, 247, 0);
   text-decoration: none !important;
   color: #F57A7A;
   cursor: pointer;
-  transition: color 0.6s ease; }
+  transition: color 0.6s ease;
+  transition: border-bottom 0.3s ease; }
 
 /*************************************************
  *  Compact (stream) list view

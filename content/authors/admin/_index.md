@@ -21,7 +21,7 @@ email: "finn_henrik@hotmail.com"
 #organizations:
 #- name: Stanford University
 #  url: ""
-role: Data and Reporting Analyst in Los Angeles, CA
+role: Economic Modeller at Cambridge Econometrics, Brussels <br/>  <font size="1"> Views are my own </font>
 social:
 - icon: cv
   icon_pack: ai
@@ -44,4 +44,5 @@ user_groups:
 - Researchers
 - Visitors
 ---
+Portfolio & personal blog
 Portfolio & personal blog. On this site you can find my experience, publications, and latest work. I also blog about the things I learn, mostly in R and python.
