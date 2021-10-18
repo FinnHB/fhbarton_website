@@ -1,11 +1,11 @@
 +++
 # Accomplishments widget.
-widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "certificates"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = false  # Activate this widget? true/false
-weight = 60  # Order that this section will appear.
+weight = 50  # Order that this section will appear.
 
-title = "awards"
+title = "certificates"
 subtitle = ""
 
 # Date format
@@ -19,34 +19,44 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
-  organization = "18th National Student-Faculty Conference on the Statistical Sciences"
+  organization = "Barcelona Graduate School of Economics"
   organization_url = ""
-  title = "Best Undergraduate Student Paper Award, First Place"
+  title = "Time Series Methods for Macroeconomic Analysis I"
   url = ""
   certificate_url = ""
-  date_start = "2017-10-01"
+  date_start = "2021-07-20"
   date_end = ""
-  description = "Co-author of the paper titled, “Understanding Micro-level Factors Influencing the Ideal Number of Children and Contraceptive Intention and Practice of Filipino Women: A Call for Attention on Women with Unmet Fertility Preference.”"
+  description = ""
 
 [[item]]
-  organization = "UP School of Statistics Graduation Rites"
+  organization = "MIT"
   organization_url = ""
-  title = "Best Undergraduate Student Paper Award, First Place"
-  url = ""
+  title = " Machine Learning with Python-From Linear Models to Deep Learning"
+  url = "https://courses.edx.org/certificates/1c6a231fb0b54a6bb211009f682aaf8f"
   certificate_url = ""
-  date_start = "2017-07-01"
+  date_start = "2021-05-27"
   date_end = ""
-  description = "Co-author of the paper titled, “Exploring the Performance of Classical Linear Regression in Key Driver Analysis for Likert-Scale Response Variables: A Simulation Study.”"
+  description = ""
 
 [[item]]
-  organization = "UP School of Statistics Graduation Rites"
+  organization = "MIT"
   organization_url = ""
-  title = "Best Undergraduate Student Paper Award, Third Place"
-  url = ""
+  title = "Probability - The Science of Uncertainty and Data"
+  url = "https://courses.edx.org/certificates/bf8bfc1aa39c4fe4a68bc54382824c9c"
   certificate_url = ""
-  date_start = "2017-07-01"
+  date_start = "2020-12-25"
   date_end = ""
-  description = "Co-author of the paper titled, “Understanding the Micro-Level Factors Influencing the Ideal Number of Children and Contraceptive Intention and Practice of Filipino Women: A Call for Attention on Filipino Women with Unmet Fertility Preference.”"
+  description = ""
+  
+[[item]]
+  organization = "Columbia"
+  organization_url = ""
+  title = " CSMM.102x: Machine Learning "
+  url = "https://courses.edx.org/certificates/d462930204a34f0daddb1f6aa8539766"
+  certificate_url = ""
+  date_start = "2020-06-08"
+  date_end = ""
+  description = ""
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -55,11 +65,11 @@ date_format = "Jan 2006"
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-  # color = "navy"
+  color = "#E5E5E3"
 
   # Background gradient.
-  gradient_start = "#AED9E0"
-  gradient_end = "#F7F7F7"
+  # gradient_start = "#AED9E0"
+  # gradient_end = "#F7F7F7"
 
 [design.spacing]
   # Customize the section spacing. Order is top, right, bottom, left.
