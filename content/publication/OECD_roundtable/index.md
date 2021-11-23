@@ -4,7 +4,7 @@ authors:
 - Sofia F. Franco
 date: "2020-03-01T00:00:00Z"
 doi: ""
-featured: true
+featured: false
 image:
   #caption: 'Image credit: [**International Transport Forum**](https://www.itf-oecd.org/sites/default/files/docs/parking-mode-choice-urban-form.pdf)'
   focal_point: ""
