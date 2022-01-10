@@ -36,7 +36,7 @@ date_format = "Jan 2006"
 [[experience]]
   title = "Research & Teaching Assistant"
   company = "NOVA School of Business and Economics"
-  company_url = ""
+  company_url = "https://www.novasbe.unl.pt/en/"
   location = "Lisbon, Portugal"
   date_start = "2019-02-01"
   date_end = "2020-03-01"

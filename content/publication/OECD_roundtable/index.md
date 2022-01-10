@@ -13,7 +13,14 @@ projects: []
 publication: '*International Transport Forum (Roundtable 181)*'
 publication_short: ""
 publication_types:
-- "1"
+- "1" #Conference paper
+#- "2" #Journal Article
+#- "3" #Preprint
+#- "4" #Report
+#- "5" #Book
+#- "6" #Book Section
+#- "7" #Thesis
+#- "8" #Patent
 publishDate: "2020-03-01T00:00:00Z"
 #slides: example
 summary: Produced maps for the OECD roundtable report.

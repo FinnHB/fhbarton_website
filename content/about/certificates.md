@@ -28,7 +28,7 @@ date_format = "Jan 2006"
   description = ""
 
 [[item]]
-  organization = "MIT"
+  organization = "Massachusetts Institute of Technology"
   organization_url = ""
   title = "Machine Learning with Python - From Linear Models to Deep Learning"
   certificate_url = "https://courses.edx.org/certificates/1c6a231fb0b54a6bb211009f682aaf8f"
@@ -37,12 +37,12 @@ date_format = "Jan 2006"
   description = ""
 
 [[item]]
-  organization = "MIT"
+  organization = "Massachusetts Institute of Technology"
   organization_url = ""
   title = "Probability - The Science of Uncertainty and Data"
   certificate_url = "https://courses.edx.org/certificates/bf8bfc1aa39c4fe4a68bc54382824c9c"
   date_start = "2020-12-25"
-  date_end = ""
+  date_end = "2021-12-25"
   description = ""
   
 [[item]]
@@ -50,6 +50,15 @@ date_format = "Jan 2006"
   organization_url = ""
   title = " CSMM.102x: Machine Learning "
   certificate_url = "https://courses.edx.org/certificates/d462930204a34f0daddb1f6aa8539766"
+  date_start = "2020-06-08"
+  date_end = ""
+  description = ""
+  
+[[item]]
+  organization = "Microsoft"
+  organization_url = ""
+  title = "Analyzing and Visualizing Data with Excel"
+  certificate_url = "https://courses.edx.org/certificates/ecb6a4288f734b5d953e3ba638ff9cbb"
   date_start = "2020-06-08"
   date_end = ""
   description = ""

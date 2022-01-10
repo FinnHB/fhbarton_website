@@ -1,7 +1,7 @@
 {{ $ := .root }}
 {{ $page := .page }}
 
-<!-- Accomplishments widget -->
+<!-- Certificates widget -->
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
     <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
@@ -22,11 +22,21 @@
             {{- with .organization_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
             {{- .organization | markdownify | emojify -}}
             {{- with .organization_url}}</a>{{end -}}
+
+            <!-- Right adjusted date -->
+            <span style="float: right">
+            {{ (time .date_start).Format ($page.Params.date_format | default "Jan 2006") }}
+            {{ if .date_end}}
+            – {{ (time .date_end).Format ($page.Params.date_format | default "Jan 2006") }}
+            {{end}}
+            </span>
+
             {{with .description}}
             <div class="card-text"; margin-bottom=-2in>{{. | markdownify | emojify}}</div>
           {{end}}
+          </div>
         </div>
-      </div>
-    {{end}}
+      {{end}}
+    </div>
   </div>
 </div>

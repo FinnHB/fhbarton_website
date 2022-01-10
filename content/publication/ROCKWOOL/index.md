@@ -8,8 +8,8 @@ about 43,000 GWh annually. In doing so, dependence on gas imports could be
 reduced by €3.3bn per year, and household gas bills could be lowered by around 
 €400 per year (a reduction in gas heating costs of around 50%). To achieve such 
 benefits, policies should be designed in such a way that retrofitting schemes operate 
-smoothly, and drive renovation at pace and at scale, in order to deliver homes that 
-are fit for the future."
+smoothly, and drive renovation at pace and at scale. We are at a point now in the climate debate
+where we need to deliver homes that are fit for the future."
 authors:
 - Jon Stenning
 - Ciaran Nevin
@@ -25,10 +25,18 @@ image:
 projects: []
 publication: '*Warmer Homes and Lower Bills - The impact of the renovation wave*'
 publication_short: ""
-publication_types: ""
+publication_types:
+#- "1" #Conference paper
+#- "2" #Journal Article
+#- "3" #Preprint
+- "4" #Report
+#- "5" #Book
+#- "6" #Book Section
+#- "7" #Thesis
+#- "8" #Patent
 publishDate: "2021-10-01T00:00:00Z"
 #slides: example
-summary: "The report assesses the potential impact of the renovation wave on the gas demand for heating in the EU. The analysis was based on a new buildingstock model developed by Pim Vercoulen and Myself, where I set up the scenarios and conducted the economic modelling. The work, was in prepared in the lead-up to COP26, and played a role in further reporting on the [building renovations and gas demand](https://www.camecon.com/wp-content/uploads/2021/10/BuildingRenovations_and_GasDemand_Final.pdf)."
+summary: "The report assesses the potential impact of the renovation wave on the gas demand for heating in the EU. The analysis was based on a new buildingstock model developed by Pim Vercoulen and myself. I conducted the scenario modelling which was used to calculate changes in consumer expenditures. The work, was prepared in the lead-up to COP26, and influenced a subsequent report on the [building renovations and gas demand](https://www.camecon.com/wp-content/uploads/2021/10/BuildingRenovations_and_GasDemand_Final.pdf)."
 tags:
 - Report
 
@@ -38,7 +46,7 @@ links:
   icon_pack: fas
   icon: file
 #- name: slides
-#  url: "files/ICOTS Presentation.pdf"
+#  url: ""
 #  icon_pack: far
 #  icon: image
 title: 
