@@ -19,34 +19,34 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
-  organization = "18th National Student-Faculty Conference on the Statistical Sciences"
+  organization = ""
   organization_url = ""
-  title = "Best Undergraduate Student Paper Award, First Place"
+  title = ""
   url = ""
   certificate_url = ""
-  date_start = "2017-10-01"
+  date_start = ""
   date_end = ""
-  description = "Co-author of the paper titled, “Understanding Micro-level Factors Influencing the Ideal Number of Children and Contraceptive Intention and Practice of Filipino Women: A Call for Attention on Women with Unmet Fertility Preference.”"
+  description = ""
 
 [[item]]
-  organization = "UP School of Statistics Graduation Rites"
+  organization = ""
   organization_url = ""
-  title = "Best Undergraduate Student Paper Award, First Place"
+  title = ""
   url = ""
   certificate_url = ""
-  date_start = "2017-07-01"
+  date_start = ""
   date_end = ""
-  description = "Co-author of the paper titled, “Exploring the Performance of Classical Linear Regression in Key Driver Analysis for Likert-Scale Response Variables: A Simulation Study.”"
-  
+  description = ""
+
 [[item]]
-  organization = "UP School of Statistics Graduation Rites"
+  organization = ""
   organization_url = ""
-  title = "Best Undergraduate Student Paper Award, Third Place"
+  title = ""
   url = ""
   certificate_url = ""
-  date_start = "2017-07-01"
+  date_start = ""
   date_end = ""
-  description = "Co-author of the paper titled, “Understanding the Micro-Level Factors Influencing the Ideal Number of Children and Contraceptive Intention and Practice of Filipino Women: A Call for Attention on Filipino Women with Unmet Fertility Preference.”"
+  description = ""
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -56,7 +56,7 @@ date_format = "Jan 2006"
 
   # Background color.
   # color = "navy"
-  
+
   # Background gradient.
   gradient_start = "#F7F7F7"
   gradient_end = "#A5DDC5"

@@ -21,9 +21,8 @@ date_format = "Jan 2006"
 [[item]]
   organization = "Barcelona Graduate School of Economics"
   organization_url = ""
-  title = "[Time Series Methods for Macroeconomic Analysis I](https://www.researchgate.net/publication/222745846_Cruising_for_parking)"
-  url = ""
-  certificate_url = "static/files/certificates/BarcelonaGSE.pdf"
+  title = "Time Series Methods for Macroeconomic Analysis I"
+  certificate_url = "/files/certificates/BarcelonaGSE.pdf"
   date_start = "2021-07-20"
   date_end = ""
   description = ""
@@ -31,9 +30,8 @@ date_format = "Jan 2006"
 [[item]]
   organization = "MIT"
   organization_url = ""
-  title = " Machine Learning with Python-From Linear Models to Deep Learning"
-  url = "https://courses.edx.org/certificates/1c6a231fb0b54a6bb211009f682aaf8f"
-  certificate_url = ""
+  title = "Machine Learning with Python - From Linear Models to Deep Learning"
+  certificate_url = "https://courses.edx.org/certificates/1c6a231fb0b54a6bb211009f682aaf8f"
   date_start = "2021-05-27"
   date_end = ""
   description = ""
@@ -42,18 +40,16 @@ date_format = "Jan 2006"
   organization = "MIT"
   organization_url = ""
   title = "Probability - The Science of Uncertainty and Data"
-  url = "https://courses.edx.org/certificates/bf8bfc1aa39c4fe4a68bc54382824c9c"
-  certificate_url = ""
+  certificate_url = "https://courses.edx.org/certificates/bf8bfc1aa39c4fe4a68bc54382824c9c"
   date_start = "2020-12-25"
   date_end = ""
   description = ""
   
 [[item]]
-  organization = "Columbia"
+  organization = "Columbia University"
   organization_url = ""
   title = " CSMM.102x: Machine Learning "
-  url = "https://courses.edx.org/certificates/d462930204a34f0daddb1f6aa8539766"
-  certificate_url = ""
+  certificate_url = "https://courses.edx.org/certificates/d462930204a34f0daddb1f6aa8539766"
   date_start = "2020-06-08"
   date_end = ""
   description = ""
@@ -73,5 +69,5 @@ date_format = "Jan 2006"
 
 [design.spacing]
   # Customize the section spacing. Order is top, right, bottom, left.
-  padding = ["25px", "0", "70px", "0"]
+  padding = ["25px", "0", "25px", "0"]
 +++

@@ -8,17 +8,23 @@
     {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
   </div>
   <div class="col-12 col-lg-8">
-    {{ with $page.Content }}{{ . }}{{ end }}
-
-    {{ if $page.Params.item }}
-      <div class="card experience course">
+    {{ range $idx, $key := sort $page.Params.item ".date_start" "desc" }}
+      <div class="card experience course" height=10%>
         <div class="card-body">
 
-          <p class="fas fa-certificate" style="font-size:8px"></p>&ensp;<font style="text-align:left; font-size:14.2px">Time Series Methods for Macroeconomic Analysis <i style="float:right;"> Barcelona GSE</i></font> &emsp; &emsp; &emsp; <br>
-          <p class="fas fa-certificate" style="font-size:8px"></p>&ensp;<font style="text-align:left; font-size:14.2px">Machine Learning with Pyton - From Linear Models to Deep Learning <i style="float:right;"> MIT</i></font> &emsp; <br>
-          <p class="fas fa-certificate" style="font-size:8px"></p>&ensp;<font style="text-align:left; font-size:14.2px">Probability - The Science of Uncertainty and Data <i style="float:right;"> MIT</i></font> &emsp; &emsp;  <br>
-          <p class="fas fa-certificate" style="font-size:8px"></p>&ensp;<font style="text-align:left; font-size:14.2px">CSMM.102x: Machine Learning <i style="float:right;"> Columbia University </i></font> &emsp; &emsp; &emsp; <br>
-          {{- with .url -}}{{- end -}}
+          <!-- Certificate title -->
+          {{- with .certificate_url -}}<a href="{{.}}" target="_blank" rel="noopener">{{- end -}}
+          <h4 class="card-title exp-title text-muted my-0">{{.title | markdownify | emojify}}</h4>
+          {{- with .certificate_url -}}</a>{{- end -}}
+
+          <!-- Certificate institution -->
+          <div class="card-subtitle my-0 article-metadata">
+            {{- with .organization_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
+            {{- .organization | markdownify | emojify -}}
+            {{- with .organization_url}}</a>{{end -}}
+            {{with .description}}
+            <div class="card-text"; margin-bottom=-2in>{{. | markdownify | emojify}}</div>
+          {{end}}
         </div>
       </div>
     {{end}}
