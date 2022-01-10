@@ -11,18 +11,16 @@
     {{ with $page.Content }}{{ . }}{{ end }}
 
     {{ if $page.Params.item }}
-    {{ range $idx, $key := sort $page.Params.item ".date_start" "desc" }}
       <div class="card experience course">
         <div class="card-body">
 
-          <small class="fas fa-certificate" style="font-size:8px"></small>&ensp;<font style="text-align:left; font-size:11.2px">Time Series Methods for Macroeconomic Analysis <i style="float:right;"> Barcelona GSE</i></font> &emsp; &emsp; &emsp; <br>
-          <small class="fas fa-certificate" style="font-size:8px"></small>&ensp;<font style="text-align:left; font-size:11.2px">Machine Learning with Pyton - From Linear Models to Deep Learning <i style="float:right;"> MIT</i></font> &emsp; <br>
-          <small class="fas fa-certificate" style="font-size:8px"></small>&ensp;<font style="text-align:left; font-size:11.2px">Probability - The Science of Uncertainty and Data <i style="float:right;"> MIT</i></font> &emsp; &emsp;  <br>
-          <small class="fas fa-certificate" style="font-size:8px"></small>&ensp;<font style="text-align:left; font-size:11.2px">CSMM.102x: Machine Learning <i style="float:right;"> Columbia University </i></font> &emsp; &emsp; &emsp; <br>
+          <p class="fas fa-certificate" style="font-size:8px"></p>&ensp;<font style="text-align:left; font-size:14.2px">Time Series Methods for Macroeconomic Analysis <i style="float:right;"> Barcelona GSE</i></font> &emsp; &emsp; &emsp; <br>
+          <p class="fas fa-certificate" style="font-size:8px"></p>&ensp;<font style="text-align:left; font-size:14.2px">Machine Learning with Pyton - From Linear Models to Deep Learning <i style="float:right;"> MIT</i></font> &emsp; <br>
+          <p class="fas fa-certificate" style="font-size:8px"></p>&ensp;<font style="text-align:left; font-size:14.2px">Probability - The Science of Uncertainty and Data <i style="float:right;"> MIT</i></font> &emsp; &emsp;  <br>
+          <p class="fas fa-certificate" style="font-size:8px"></p>&ensp;<font style="text-align:left; font-size:14.2px">CSMM.102x: Machine Learning <i style="float:right;"> Columbia University </i></font> &emsp; &emsp; &emsp; <br>
           {{- with .url -}}{{- end -}}
         </div>
       </div>
-    {{end}}
     {{end}}
   </div>
 </div>
