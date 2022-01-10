@@ -1,0 +1,42 @@
+---
+title: "The True Cost of Cruising"
+author: "Finn-Henrik Barton"
+date: '2022-01-10'
+output:
+  html_document:
+    toc: true
+  pdf_document:
+    keep_tex: true
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: yes
+slug: cruising-for-parking
+subtitle: The simulated cost of cruising for parking, based on the julia implementation of *Crusing for parking* (Shoup, 2006)
+summary: The true cost of providing free parking is a lot higher than what most people may expect. This post discussed the implications of free parking using a simulation approach based on the  2006 paper by Donald Shoup, *Cruising for parking*.
+tags:
+- featured
+- featured julia
+categories:
+- Environment
+- Policy
+- Urban
+- Modelling
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>Cruising for parking may seem to be an innocent act, however its mere existence stems from misaligned incentives. An individual will only cruise given that they value their time &amp; fuel cost less than potential savings from parking off-street (parking garage/lot). The individual agent is unlikely to take into account the impact which their cruising has on other road users, in terms of congestion, or the extra fuel emissions caused. Although this may seem somewhat trite, Donald Shoup (<a href="https://www.researchgate.net/publication/222745846_Cruising_for_parking">2006</a>) presents a model which aims to bring to light the extent which these negative externalities can reach.</p>
+<p>Aligning the price of curb-side parking and off-street parking generally removes the incentive to cruise. Furthermore, as the curb-side prices are often regulated according to the local departments of transportation, revenues can be collected by increasing the curb-side prices. This creates a potential triple-dividend, where increases in curb-side parking can reduce emissions and congestion at the same time as raising revenues for the government which can be used to offset other distortionary taxes. This post will follow Shoup’s model, based on the julia implementation which you can find over on my <a href="https://github.com/FinnHB/JuliaProjects/tree/main/ParkingSimulation">github</a>. For a more detailed overview of the modelling, the github repository contains an interactive notebook which discusses the model implementation.</p>
+</div>
+<div id="background" class="section level2">
+<h2>Background</h2>
+<font size="1">
+<p>
+Feature image source: <a href="https://unsplash.com/photos/6QIefFMpHEY">www.unsplash.com</a>
+</p>
+<p></font></p>
+</div>
