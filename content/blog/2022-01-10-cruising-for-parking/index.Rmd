@@ -25,9 +25,9 @@ categories:
 ---
 
 ## Introduction
-Cruising for parking may seem to be an innocent act, however its mere existence stems from misaligned incentives. An individual will only cruise given that they value their time & fuel cost less than potential savings from parking off-street (parking garage/lot). The individual agent is unlikely to take into account the impact which their cruising has on other road users, in terms of congestion, or the extra fuel emissions caused. Although this may seem somewhat trite, Donald Shoup ([2006](https://www.researchgate.net/publication/222745846_Cruising_for_parking)) presents a model which aims to bring to light the extent which these negative externalities can reach.
+Cruising for parking may seem to be an innocent act, however its mere existence stems from misaligned incentives. An individual will only cruise given that they value their time & fuel cost less than potential savings from parking off-street (parking garage/lot). The individual agent is unlikely to take into account the impact which their cruising has on other road users, both in terms of congestion and the additional pollution they emit. Although this may seem somewhat trite, Donald Shoup ([2006](https://www.researchgate.net/publication/222745846_Cruising_for_parking)) presents a model which aims to bring to light the extent which these negative externalities can reach.
 
-Aligning the price of curb-side parking and off-street parking generally removes the incentive to cruise. Furthermore, as the curb-side prices are often regulated according to the local departments of transportation, revenues can be collected by increasing the curb-side prices. This creates a potential triple-dividend, where increases in curb-side parking can reduce emissions and congestion at the same time as raising revenues for the government which can be used to offset other distortionary taxes. This post will follow Shoup's model, based on the julia implementation which you can find over on my [github](https://github.com/FinnHB/JuliaProjects/tree/main/ParkingSimulation). For a more detailed overview of the modelling, the github repository contains an interactive notebook which discusses the model implementation.
+Aligning the price of curb-side parking and off-street parking generally removes the incentive to cruise. Furthermore, as the curb-side prices are often regulated according to the local departments of transportation, increasing curb-side prices may act as another revenue stream for local governments. This creates a potential triple-dividend, where increases in curb-side parking can reduce emissions and congestion and the government can be used to offset other distortionary taxes. This post will follow Shoup's model, based on the julia implementation which you can find over on my [github](https://github.com/FinnHB/JuliaProjects/tree/main/ParkingSimulation). For a more detailed overview of the modelling, the github repository contains an interactive notebook which discusses the model implementation.
 
 
 ## Brief overview of the model
@@ -56,16 +56,22 @@ What may seem like an obvious answer, is to increase the amount of curbside park
 Doubling the amount of available curb-side parking space from 8 to 16 has an immediate impact on the amount of cruising in the short term. Unfortunately, the same story as before repeats itself. As soon as the available curb-side parking has been occupied, the cruising persists, returning to the same stable point of approximately 8 agents cruising for parking. That being said, increasing the amount of available parking, can be an effective method of reducing coasting if the demand for parking is sufficiently low, and periods of high demand are sufficiently short.
 
 ## Price matching
-By far the most efficient method of reducing the incentive to cruise is to align the price of parking on the curb versus the price of parking off-street.
+By far the most efficient method of reducing the incentive to cruise is to align the price of parking on the curb versus the price of parking off-street. By matching the prices, the numerator in our equation becomes zero and the cruising incentive disappears. As the price of parking on the curb and off-street the incentive to cruise dwindles until at the point where $p=m$ there is no longer any gains had from cruising.
+
+![](cruising_combined_p.png){width=110%}
+
+For reducing the incentive to cruise, there is no difference between increasing the price of curb-side parking versus reducing the cost of off-street parking. This can easily be seen by observing that the first derivatives are the same with the exception of a minus sign in front of $\frac{\partial c^*}{\partial p}$:
+
+$$\frac{\partial c^*}{\partial p} = -\frac{t}{f+nv}$$ $$\frac{\partial c^*}{\partial m} = +\frac{t}{f+nv}$$
+That being said, reducing the price of off-street parking prices would incentivise more car owners to travel to urban areas rather than using public transport. This would increase the overall demand for parking, however, at the low prices, private companies may be unwilling to provide parking services, leaving the onus of providing parking on local governments. Furthermore, supply-side policies are not necessarily feasible in large metropolitan areas where the land fetches exorbitant prices.
 
 
-## Time restrictions
-Enforcing time restrictions on the amount of time allowed to park, increases the rate at which curbside locations become available. On the one hand, this may increase the likelihood of agents finding available parking increasing the incentive to cruise. On the other hand, it may act as a method of market segmentation, where agents who wish to park for longer durations no longer prefer parking on the curb. Unfortunately, this model is not apt at modelling such scenarios, and I'll just leave this here as some food for thought.
+## Other policy levers
+I would also like to briefly give some attention to a few of the other variables which have been somewhat neglected so far. Incentivising carpooling would increase the $n$ term in the denominator, resulting in an increased cost of cruising since the time-cost is born by two agents. Similarly, imposing higher fuel taxes will increase $f$, affecting the hourly cost of cruising. Lastly, I'd like to bring to attention the potential implication of limiting parking time. Limiting the amount of time an individual can park off-street would decrease the incentive to cruise for long periods of time. One reason for this would be due to the option between parking on the curb versus off-street no longer face the value of $t$, and this parking time preference would need to be captured. On the other hand, limiting the parking duration may also act as a way of segregating the market if agents are unwilling to change their parking duration. In this case, less agent would interested in parking on the curb since we will only be considering a smaller set within the market. This said, due to the lack of prior expectations or a way of modelling different markets, this model is not apt to answer this question in full, however, I think it is some fun food for thought.
 
 
-
-
-
+## Concluding remarks
+Although at first, the concept of cruising for parking may seem somewhat banal. Many states and cities have perverse incentives set up, incentivising individuals to cruise for a 'better' parking deal. This can play an unexpectedly large role in local pollution and congestion. Although several policy tools can help reduce the cruising incentive, it is only by bringing the price of curb-side parking in alignment with the off-street price that we can get a triple dividend.
 
 
 
