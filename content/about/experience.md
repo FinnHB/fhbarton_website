@@ -56,30 +56,6 @@ date_format = "Jan 2006"
   • Taught GIS at a 2021 summer school in [Spatial Analysis, Land Use, and the Environment](http://sisisemail.up.edu.pe/sisisemail/_data/2019/7845/Difusion_SS-full-text_3.pdf) held at Universidade del Pacific Lima, Peru.
 
   """
-  
-[[experience]]
-title = "Warehouse Worker"
-company = "Bama Dagligvare"
-company_url = ""
-location = "Bergen, Norway"
-date_start = "2015-06-01"
-date_end = "2015-09-01"
-alt_location = ""
-alt_date_start = ""
-alt_date_end = ""
-description = ""
-
-[[experience]]
-title = "Beach Lifeguard"
-company = "Royal National Lifeboat Institution (RNLI)"
-company_url = ""
-location = "South Wales"
-date_start = "2013-07-01"
-date_end = "2014-05-01"
-alt_location = ""
-alt_date_start = ""
-alt_date_end = ""
-description = ""
 
 #  """
 #
