@@ -1,6 +1,6 @@
 +++
 # Experience widget.
-widget = "experience"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "experience_custom"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
@@ -22,9 +22,12 @@ date_format = "Jan 2006"
   title = "Economic Modeller"
   company = "Cambridge Econometrics"
   company_url = "https://www.camecon.com/"
-  location = "Brussels, Belgium"
-  date_start = "2020-10-01"
+  location = "Cambridge, United Kingdom"
+  date_start = "2021-09-27"
   date_end = ""
+  alt_location = "Brussels, Belgium"
+  alt_date_start = "2020-10-01"
+  alt_date_end = "2021-09-27"
   description = """
   • Developing bespoke economic models to conduct scenario modelling for policy makers.
   
@@ -40,6 +43,9 @@ date_format = "Jan 2006"
   location = "Lisbon, Portugal"
   date_start = "2019-02-01"
   date_end = "2020-03-01"
+  alt_location = ""
+  alt_date_start = ""
+  alt_date_end = ""
   description = """
   • Conducted research on spatial econometrics and how proximity and structural characteristics of
   parking facilities in Los Angeles affect price-setting behaviour.
@@ -58,6 +64,9 @@ company_url = ""
 location = "Bergen, Norway"
 date_start = "2015-06-01"
 date_end = "2015-09-01"
+alt_location = ""
+alt_date_start = ""
+alt_date_end = ""
 description = ""
 
 [[experience]]
@@ -67,6 +76,9 @@ company_url = ""
 location = "South Wales"
 date_start = "2013-07-01"
 date_end = "2014-05-01"
+alt_location = ""
+alt_date_start = ""
+alt_date_end = ""
 description = ""
 
 #  """
