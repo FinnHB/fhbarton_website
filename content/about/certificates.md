@@ -42,7 +42,7 @@ date_format = "Jan 2006"
   title = "Probability - The Science of Uncertainty and Data"
   certificate_url = "https://courses.edx.org/certificates/bf8bfc1aa39c4fe4a68bc54382824c9c"
   date_start = "2020-12-25"
-  date_end = "2021-12-25"
+  date_end = ""
   description = ""
   
 [[item]]
