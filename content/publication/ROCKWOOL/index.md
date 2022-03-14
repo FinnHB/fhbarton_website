@@ -17,7 +17,7 @@ authors:
 - Ornella Dellaccio
 date: "2021-10-01T00:00:00Z"
 doi: ""
-featured: true
+featured: false
 image:
   #caption: ""
   focal_point: ""
@@ -49,7 +49,7 @@ links:
 #  url: ""
 #  icon_pack: far
 #  icon: image
-title: 
+title: "Warmer Homes and Lower Bills - The impact of the renovation wave"
 url_code: ""
 url_dataset: ""
 url_pdf: 

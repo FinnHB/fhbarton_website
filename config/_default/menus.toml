@@ -32,7 +32,7 @@
 
 [[main]]
   name = "Research"
-  url = "research"
+  url = "publication"
   weight = 40
 
 # Link to a PDF of your resume/CV from the menu.
