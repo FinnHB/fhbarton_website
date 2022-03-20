@@ -1,5 +1,9 @@
 ---
-abstract: ""
+abstract: "Africa is a continent rich in land, water and energy resources, with a young and fast-growing population. Already the world’s youngest continent, it is expected to grow to nearly 2.5 billion people by 2050, 80% of them in Sub-Saharan Africa (UNPD, 2019). Levels of human and economic development differ widely across the continent, but it is clear that the opportunities the continent offers are vast. Energy plays a fundamental role in Africa’s development pathway, and improving livelihoods and access to opportunities will depend crucially on the expansion of access to reliable and affordable and sustainable energy. This is also in view of the expectedly vast impact of climate change on the African continent, the effects of which are already beginning to be felt right now, and in view of the enormous potential for industrial development, job creation and environmental management that more widespread access to sustainable energy sources brings. The African Union’s Agenda 2063 clearly establishes the links between energy and industrialisation (AUC, 2015). However, access to reliable electricity and clean, modern cooking in Africa remains far behind most other parts of the world. With an electrification rate of 46%, 570 million people in 2019 were still without access to electricity in Sub-Saharan Africa, while only 16% had access to clean cooking (IEA, IRENA et al., 2021). This situation reinforces socio-economic inequalities and impedes progress in widening access to basic health services, education, and modern machinery and technology – thus, ultimately, to socio-economic opportunities.
+
+
+Africa holds significant energy resources. Fossil fuels represent around 40% of African exports, with countries such as Algeria, Angola, Chad, Nigeria and the Sudan being highly dependent on them as a source of revenue. Along with other raw materials that continue to constitute a substantial proportion of African countries’ exports, fossil fuels provide revenue but also reinforce commodity-dependence. In the context of a low-carbon future, these and other fossil fuel dependent countries will be increasingly vulnerable to the risks of stranded assets, in addition to the already serious effects of price volatility for internationally traded commodities. Renewable energy, by contrast, offers African economies prospects for economic growth, cost-effective technologies to expand energy access and quality of access, and industrial development along new value-chains, with substantial, local job creation potential (see also subsequent chapters, especially Chapter 5). Energy development will also have a critical influence on Africa’s recovery from the COVID-19 crisis. Recovery from the pandemic heightens the importance of placing sustainable energy development at the core of broader economic development and industrialisation strategies. This must include increased efforts and investment to broaden access to energy in vital sectors such as health and education, and the use of recovery-related policy measures and investments to hasten the wider structural shift toward sustainable energy as a pillar of resilient economies and societies (IRENA, 2020a).
+"
 authors:
 - Ha Bui
 - Jamie Pirie
@@ -34,7 +38,8 @@ publishDate: "2022-01-01T00:00:00Z"
 #slides: example
 summary: "In conjunction with this project, IRENA contracted Cambridge Econometrics to expand their macroeconometric model, E3ME, to be able to provide more granular economic modelling for Africa. Together with other members of the modelling team, I spent several months processing, verifying, and collating the data for 12 new African Regions plus the United Arab Emirates to be added to the model. Based on the extended version of E3ME, several colleagues (mentioned in the acknowledgements of the report) contributed to the economic modelling which the this report is based on."
 tags:
-- Report
+- Environment
+- Modelling
 
 links:
 - name: Full Report
