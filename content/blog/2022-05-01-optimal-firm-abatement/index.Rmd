@@ -12,7 +12,7 @@ image:
   focal_point: ''
   preview_only: yes
 slug: optimal-firm-abatement
-subtitle: A simple excercise on how to solve a firm optimisation problem when a carbon tax or cap-and-trade system is introduced.
+subtitle: A simple exercise on how to solve a firm optimisation problem when a carbon tax or cap-and-trade system is introduced.
 summary: How do we expect firms to react when faced with an increased cost of polluting? This post reflects on a recent Pluto.jl notebook I wrote, looking at how we can solve for a firm's optimal CO<sub>2</sub> abatement choices in light of different government policies. <br><br>The post is inspired by a long-lasting interest in understanding how to solve optimisation problems in economics programmatically. The question was then applied to a topic which I find interesting, namely, how environmental policy can affect firm choices.
 tags:
 - featured
@@ -30,7 +30,7 @@ categories:
 
 
 ## Introduction
-There are many ways which governments try to incentivise firms to reduce their CO$_2$ emissions. However, two of the most promiment methods are carbon taxes and permit schemes. With the latter sometimes being referred to as a 'cap-and-trade' system -- emissions are capped and firms trade the permits. When it comes to meeting emission targets, both methods can be effective tools.
+There are many ways which governments try to incentivise firms to reduce their CO$_2$ emissions. However, two of the most prominent methods are carbon taxes and permit schemes. With the latter sometimes being referred to as a 'cap-and-trade' system -- emissions are capped and firms trade the permits. When it comes to meeting emission targets, both methods can be effective tools.
 
 This blog post will be focused on how one can analyse these two policies, specifically looking at an optimization framework. The motivation behind this is purely because I have recently had a bit of a personal fascination with how programming can be used to solve optimisation problems without resorting to [finite differences](https://en.wikipedia.org/wiki/Finite_difference); and what better example to use than taxes vs. permits?
 
@@ -66,7 +66,7 @@ Before we start with the coding, we'll need to load the relevant packages. In th
 using JuMP, Ipopt, ForwardDiff
 ```
 
-For pragmatic resons, I will only go through parts *1.a* and *1.c* from the notebook as they are the questions which relate to optimisation. Question *1.b* looks at calculations for the net-present value of costs. It is important, but unfortunately doesn't include any optimisation.
+For pragmatic reasons, I will only go through parts *1.a* and *1.c* from the notebook as they are the questions which relate to optimisation. Question *1.b* looks at calculations for the net-present value of costs. It is important, but unfortunately doesn't include any optimisation.
 
 
 #### A firm's response to taxes
@@ -220,7 +220,7 @@ Notice now that we allow the firms to trade, firm $A$ will abate a greater amoun
 
 Lastly, lets answer the question at hand, and calculate the equilibrium permit price. Since each firm emits 2.0 tCO and each permit counts for 0.1 tCO$_2$, a permit corresponds to an abatement effort, $a$, of 0.05. Consequently, to get the cost per permit, we multiply the marginal abatement cost with the relative abatement effort of one permit.
 
-Although JuMP implicitly solves the derivate, it doesn't return any derivatives. In order to get the marginal abatement cost of each firm, we will use the ForwardDiff.jl package to calculate the derivatives using automatic differentiation, specifically, forward differentiation. When passing a function to `ForwardDiff.derivative` we get a function in return which outputs the first derivative of our original function evaluated at some input value. Passing in our optimal abatement values for firm $A$ or $B$, we get the marginal abatement cost of both firms at the equilibrium. Calculating the equilibrium price now becomes a simple excercise -- only thing one has to be cautious of is that the marginal abatement is measured in abatement effort, while each permit represents a set amount of CO$_2$ in tCO$_2$,
+Although JuMP implicitly solves the derivate, it doesn't return any derivatives. In order to get the marginal abatement cost of each firm, we will use the ForwardDiff.jl package to calculate the derivatives using automatic differentiation, specifically, forward differentiation. When passing a function to `ForwardDiff.derivative` we get a function in return which outputs the first derivative of our original function evaluated at some input value. Passing in our optimal abatement values for firm $A$ or $B$, we get the marginal abatement cost of both firms at the equilibrium. Calculating the equilibrium price now becomes a simple exercise -- only thing one has to be cautious of is that the marginal abatement is measured in abatement effort, while each permit represents a set amount of CO$_2$ in tCO$_2$,
 
 ```{julia echo=TRUE, results='hide'}
 #First derivative of abatement cost function of firm A, i.e. marginal abatement cost function
@@ -243,7 +243,7 @@ equilibrium_permit_price = mac(a1_optimal) * tco2_per_permit/(Q*co2_intensity)
 
 
 ## Concluding remarks
-Using Julia for solving optimisation problems is surprising easy. Once one becomes used to the syntax for JuMP, it becomes just becomes a matter of writing down the correct functions and passing them to a model using the relevant macros. What's even better is that it's fast. I haven't really touched upon this, but solving optimisation problems is generally extremely fast in comparison to some other methods using finite differences. Even high-dimensional optimisation problems can be solved extremely quickly, however, for high dimensional problems it is often advised to use backwards differenatiation instead of forward.
+Using Julia for solving optimisation problems is surprising easy. Once one becomes used to the syntax for JuMP, it becomes just becomes a matter of writing down the correct functions and passing them to a model using the relevant macros. What's even better is that it's fast. I haven't really touched upon this, but solving optimisation problems is generally extremely fast in comparison to some other methods using finite differences. Even high-dimensional optimisation problems can be solved extremely quickly, however, for high dimensional problems it is often advised to use backwards differentiation instead of forward.
 
 Lastly, as a final disclaimer. The two examples provided in this blog post are meant for illustrative and pedagogical purposes. In the real world, everything in messy, and a firm may not perfectly know it's abatement cost function or the abatement cost function of the other firms in the market. That is not to say that these "models" are not useful tools when thinking about policy, however, just remember to take them with a grain of salt if every applying these methods to the real world.
 

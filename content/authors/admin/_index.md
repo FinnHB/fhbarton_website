@@ -44,5 +44,4 @@ user_groups:
 - Researchers
 - Visitors
 ---
-Portfolio & personal blog
-Portfolio & personal blog. On this site you can find my experience, publications, and latest work. I also blog about the things I learn, mostly in R and python.
+Portfolio & personal blog. On this site you can find my experience, publications, and latest work. I also occsionally blog things I learn or find interesting.

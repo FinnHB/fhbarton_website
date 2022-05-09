@@ -32,7 +32,7 @@ publication_types:
 #- "8" #Patent
 publishDate: "2022-03-14T00:00:00Z"
 #slides: example
-summary: "With 40% of Europe's energy being used by buildings, translating to 36% of all CO2 emissions, decarbonising the the building stock is non-negotiable for reach net-zero. The project analyses how Europe may look like under different net-zero transition pathways in the heating sector. Exploring scenarios from hydrogen boilers to heat pumps, analysing the socio-economic implications of the different pathways. "
+summary: "With 40% of Europe's energy being used by buildings, translating to 36% of all CO2 emissions, decarbonising the building stock is non-negotiable for reach net-zero. The project analyses how Europe may look like under different net-zero transition pathways in the heating sector. Exploring scenarios from hydrogen boilers to heat pumps, analysing the socio-economic implications of the different pathways. "
 tags:
 - Featured
 - Environment

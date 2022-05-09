@@ -26,7 +26,7 @@ publication_types:
 #- "8" #Patent
 publishDate: "2021-10-01T00:00:00Z"
 #slides: example
-summary: "The report assesses the potential impact of the renovation wave on the gas demand for heating in the EU. The analysis was based on a new buildingstock model developed by Pim Vercoulen and myself. I conducted the scenario modelling which was used to calculate changes in consumer expenditures. The work, was prepared in the lead-up to COP26, and influenced a subsequent report on the [building renovations and gas demand](https://www.camecon.com/wp-content/uploads/2021/10/BuildingRenovations_and_GasDemand_Final.pdf)."
+summary: "The report assesses the potential impact of the renovation wave on the gas demand for heating in the EU. The analysis was based on a new building stock model developed by Pim Vercoulen and myself. I conducted the scenario modelling which was used to calculate changes in consumer expenditures. The work, was prepared in the lead-up to COP26, and influenced a subsequent report on the [building renovations and gas demand](https://www.camecon.com/wp-content/uploads/2021/10/BuildingRenovations_and_GasDemand_Final.pdf)."
 tags:
 - Environment
 - Modelling

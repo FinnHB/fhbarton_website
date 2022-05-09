@@ -29,11 +29,13 @@ date_format = "Jan 2006"
   alt_date_start = "2020-10-01"
   alt_date_end = "2021-09-27"
   description = """
-  • Developing bespoke economic models to conduct scenario modelling for policy makers.
-  
-  • Maintaining and developing the macroeconometric model (E3ME), ensuring that the model remains up-to-date with current events.
+  • Develop bespoke economic models for clients, mostly within the context of net-zero transitions.
 
-  • Processing and cleaning large datasets — recently estimated marginal abatement cost (MAC) curves of renovation of the EU building stock, evaluatting 22 million dwellings over a 15 year time-frame.
+  • Conduct economic scenario analysis for multinational organisations such as the World Bank, European Climate Foundations, and IRENA. 
+  
+  • Maintain and develop the in-house macroeconometric model (E3ME).
+
+  • Processing and cleaning large datasets. Including estimation of renovation cost curves for UK dwellings, using data from 20 million properties and standardisation national accounts data from multiple countries.
   """
 
 [[experience]]
