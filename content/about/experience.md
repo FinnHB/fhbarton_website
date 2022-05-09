@@ -35,7 +35,7 @@ date_format = "Jan 2006"
   
   • Maintain and develop the in-house macroeconometric model (E3ME).
 
-  • Processing and cleaning large datasets. Including estimation of renovation cost curves for UK dwellings, using data from 20 million properties and standardisation national accounts data from multiple countries.
+  • Processing and cleaning large datasets. Including estimation of renovation cost curves for UK dwellings, using data from 20 million properties and standardisation national of accounts data from multiple countries.
   """
 
 [[experience]]
