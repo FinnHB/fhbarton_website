@@ -29,6 +29,11 @@ date_format = "Jan 2006"
   alt_date_start = ""
   alt_date_end = ""
   description = """
+  • Development of regional environmental-economic models.
+  
+  • Estimation and imputation of emission factors for our footprinting and assurance services.
+
+  • Database management and cloud computing using Microsoft Azure.
   """
 
 
