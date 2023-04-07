@@ -21,7 +21,7 @@ email: "finn_henrik@hotmail.com"
 #organizations:
 #- name: Stanford University
 #  url: ""
-role: Economic Modeller at Cambridge Econometrics, Brussels <br/>  <font size="1"> Views are my own </font>
+role: Data Scientist at Carbon Trust, London <br/>  <font size="1"> Views are my own </font>
 social:
 - icon: cv
   icon_pack: ai

@@ -29,6 +29,7 @@ summary: Report written by Sofia Franco on the impact parking prices and availab
 tags:
 - Urban
 - Supporting Role
+- Data Visualisation
 
 links:
 - name: PDF

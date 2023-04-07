@@ -28,6 +28,7 @@ publishDate: "2020-08-09T00:00:00Z"
 summary: Paper and analysis written by authors on the impact of minimum parking requirements. I contributed with GIS-based visualisations (figures 2-5).
 tags:
 - Urban
+- Data Visualisation
 - Supporting Role
 
 links:

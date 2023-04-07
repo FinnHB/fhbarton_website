@@ -11,12 +11,12 @@
 [[main]]
   name = "Blog"
   url = "blog"
-  weight = 20
+  weight = 30
 
 [[main]]
   name = "Teaching"
   url = "teaching"
-  weight = 25
+  weight = 40
 
 #Want to add a gallery
 
@@ -33,7 +33,7 @@
 [[main]]
   name = "Research"
   url = "publication"
-  weight = 40
+  weight = 20
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
